@@ -1,0 +1,294 @@
+.font {
+    font-family: 'Kanit', sans-serif;
+    color:aliceblue;
+}
+.font2 {
+    font-family: 'Cormorant SC', serif;
+    color:aliceblue;
+}
+.font3 {
+    font-family: 'Kanit', sans-serif;
+    color:rgb(0, 0, 0);
+}
+.font4 {
+    font-family: 'Kanit', sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color:rgb(255, 255, 255)
+}
+
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(picture/bg02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-family: 'Kanit', sans-serif;
+    color: rgb(255, 102, 0);
+    font-size: 70px;
+}
+
+.hero h2 {
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+
+}
+
+.hero2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(picture/landscape.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+li, a, button{
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:aliceblue;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right:8%;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: rgb(5, 148, 148);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(0, 105, 105);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(0, 96, 151);
+}
+
+.about {
+    width: 100%;
+    padding: 7% 0px;
+    background-color: #191919;
+}
+
+.about img {
+    height: auto;
+    width: 500px;
+}
+
+.about-text {
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h2{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main img {
+    width: 170px;
+    height: 500px;
+}
+
+.contact h3{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 40px;
+
+}
+.contact img{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%)
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+}
+
+.column2 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px;
+    align-items: center; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.a {
+    text-align: center;
+  }
+
+.contact {
+    width: 100%;
+    padding: 9% 0px;
+    background-color: #000000;
+}
+
+.contact-text {
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+
+.card .face {
+    font-family: 'Kanit', sans-serif;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    border: 10px solid rgb(43, 0, 0);
+}
+
+.card .face.front {
+    background-color: rgb(92, 0, 0);
+}
+
+.card:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back {
+    background-color: #414141;
+    color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+    text-align: center;
+}
+
+.card:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.contact img {
+    width: 100px;
+    height: 100px;
+}
+
+.dynamic-txts li{
+    color: white;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+}
+
+.dynamic-txts li span {
+    position: relative;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #191919;
+    border-left: 2px solid white;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
